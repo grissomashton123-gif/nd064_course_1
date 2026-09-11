@@ -31,8 +31,8 @@ jobs:
       - name: Build and Push Image
         uses: docker/build-push-action@v5
         with:
-          context: .
-          file: ./Dockerfile
+          context: ./project/techtrends
+          file: ./project/techtrends/Dockerfile
           push: true
-          # Tags the built image under your personal DockerHub namespace
+          # Tags the built image under personal DockerHub namespace
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/techtrends:latest
