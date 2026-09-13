@@ -4,6 +4,7 @@ service:
   port: 7111
 
 image:
+  repository: grissoma/techtrends
   pullPolicy: Always
 
 replicaCount: 5
